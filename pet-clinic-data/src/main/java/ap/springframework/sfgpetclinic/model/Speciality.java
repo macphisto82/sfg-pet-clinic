@@ -1,9 +1,16 @@
 package ap.springframework.sfgpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "specialties")
 public class Speciality extends BaseEntity {
 
 	private static final long serialVersionUID = 2924551864721126385L;
 	
+	@Column(name = "description")
 	private String description;
 
 	public String getDescription() {
