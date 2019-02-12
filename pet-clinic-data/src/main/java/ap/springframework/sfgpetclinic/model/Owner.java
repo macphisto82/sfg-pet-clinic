@@ -18,13 +18,20 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Entity
 @Table(name = "owners")
 public class Owner extends Person {
+	private static final long serialVersionUID = 7547650345463406864L;
 
-	private static final long serialVersionUID = 4435947974885655300L;
+	@Builder
+    public Owner(Long id, String firstName, String lastName, String address, String city,
+                 String telephone, Set<Pet> pets) {
+        super(id, firstName, lastName);
+        this.address = address;
+        this.city = city;
+        this.telephone = telephone;
+        this.pets = pets;
+    }
 	
 	@Column(name = "address")
 	private String address;

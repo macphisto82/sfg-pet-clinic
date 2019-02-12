@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="postgres-jdbc-168b46b6ff5-569c1cdbc799eaad" provider="postgresql" driver="postgres-jdbc" name="PostgreSQL - jzqbqrlt" save-password="true" show-system-objects="true" read-only="false">
+		<connection host="manny.db.elephantsql.com" port="5432" server="" database="jzqbqrlt" url="jdbc:postgresql://manny.db.elephantsql.com:5432/jzqbqrlt" user="jzqbqrlt" password="RApQCmV3FBNVBA0yJCMSWXcjUUFQaUkIMT04XyIOFCN35w==" type="dev">
+			<provider-property name="@dbeaver-show-non-default-db@" value="false"/>
+			<provider-property name="@dbeaver-show-template-db@" value="false"/>
+		</connection>
+	</data-source>
+	<filters/>
+</data-sources>
